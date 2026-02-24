@@ -29,7 +29,7 @@ function App() {
 
           <figure>
             <img
-              src="/assets/profile.jpg"
+              src="src/assets/profile.jpg"
               alt="Elif SAKAR profil fotoğrafı"
               width={160}
             />
