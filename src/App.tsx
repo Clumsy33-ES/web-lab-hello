@@ -10,11 +10,21 @@ function App() {
 
       {/* Header + Nav */}
       <header>
-        <h1>Elif SAKAR - Portföyüm</h1>
+        <div className="site-title">
+          Elif SAKAR - Portföyüm
+        </div>
 
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
+            <ul className="skill-tags" role="list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Git</li>
+            </ul>
             <li><a href="#projeler">Projeler</a></li>
             <li><a href="#iletisim">İletişim</a></li>
           </ul>
@@ -54,9 +64,10 @@ function App() {
 
         {/* Projeler */}
         <section id="projeler">
-          <h2>Projeler</h2>
-
-          <article>
+          <h2>Projelerim</h2>
+          <div className="project-grid">
+          <article className="project-card">
+            <img src="/src/assets/proje1.jpg" alt="E-AVM Projesi" />
             <h3>E-AVM</h3>
             <p>
               Web tabanlı bir e-ticaret uygulaması.
@@ -64,13 +75,14 @@ function App() {
             </p>
 
             <h4>Proje Teknolojileri</h4>
-            <ul>
+            <ul className="skill-tags" >
               <li>React</li>
               <li>TypeScript</li>
             </ul>
           </article>
 
-          <article>
+          <article className="project-card">
+            <img src="/src/assets/proje2.jpg" alt="Mobil Uygulama Projesi" />
             <h3>Mobil Uygulama</h3>
             <p>
               Mobil uygulama geliştirmeye yönelik örnek bir proje.
@@ -78,10 +90,11 @@ function App() {
             </p>
 
             <h4>Proje Teknolojileri</h4>
-            <ul>
+            <ul className="skill-tags">
               <li>React Native</li>
             </ul>
           </article>
+          </div>
         </section>
 
         {/* İletişim */}
